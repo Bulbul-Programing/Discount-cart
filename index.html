@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount section</title>
+    <style>
+        h1{
+            color:rgb(29, 29, 29);
+        }
+        span{
+            font-size: 25px;
+        }
+        section{
+            background-color:rgba(71, 145, 255, 0.555) ;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            border-radius: 10px;
+        }
+        section div{
+            padding: 30px;
+        }
+
+        input{
+            width: 90%;
+            height: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+        }
+        button{
+            padding: 10px 15px;
+            background-color: rgb(255, 136, 0);
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <h1>Your total amount:- <span id="price-amount">1000</span> TK</h1>
+                <input id="coupon-code" type="text" placeholder="Please Enter Coupon code">
+                <button id="apply-now-btn">Apply Now</button>
+               <h1>Please pay now:- <span id="price-after-discount">1000</span> TK</h1>
+            </div>
+        </section>
+    </main>
+    <script src="js/discount.js"></script>
+</body>
+</html>
